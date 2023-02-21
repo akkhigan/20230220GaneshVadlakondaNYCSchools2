@@ -9,7 +9,17 @@
     <fragment
         android:id="@+id/schoolsFragment"
         android:name="com.example.a20230220_ganeshvadlakonda_nycschools.ui.SchoolsFragment"
-        android:label="fragment_quotes"
+        android:label="fragment_schools"
+        tools:layout="@layout/fragment_schools" >
+        <action
+            android:id="@+id/action_schoolsFragment_to_schoolDetailsFragment"
+            app:destination="@id/schoolDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/schoolDetailsFragment"
+        android:name="com.example.a20230220_ganeshvadlakonda_nycschools.ui.SchoolDetailsFragment"
+        android:label="fragment_SchoolDetails"
         tools:layout="@layout/fragment_schools" />
 
 </navigation>

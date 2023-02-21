@@ -1,12 +1,13 @@
 package com.example.a20230220_ganeshvadlakonda_nycschools.ui
 
+import android.content.Context
 import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.example.a20230220_ganeshvadlakonda_nycschools.databinding.FragmentSchoolsBinding
 import com.example.a20230220_ganeshvadlakonda_nycschools.models.School
 
-class SchoolsRecyclerViewAdapter : RecyclerView.Adapter<SchoolsRecyclerViewAdapter.ViewHolder>() {
+class SchoolsRecyclerViewAdapter (): RecyclerView.Adapter<SchoolsRecyclerViewAdapter.ViewHolder>() {
 
     var schools: List<School>? = null
         set(value){
@@ -34,5 +35,6 @@ class SchoolsRecyclerViewAdapter : RecyclerView.Adapter<SchoolsRecyclerViewAdapt
     inner class ViewHolder(binding: FragmentSchoolsBinding) :
         RecyclerView.ViewHolder(binding.root) {
     }
+
 
 }
